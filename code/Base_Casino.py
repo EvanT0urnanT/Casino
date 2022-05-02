@@ -105,10 +105,8 @@ def connexion(connecter):
     Cette fonction renvoie l'id_joueur d'un joueur une fois qu'il s'est connecter grâce a son pseudo et son mot de passe 
     """
     while not connecter :
-        #pseudo = str(input("Quel est votre pseudo ? : "))
-        #mdp = getpass.getpass(f"Mot de passe pour {pseudo} ? : ")
-        pseudo = "Protodox"
-        mdp = "Protodox"
+        pseudo = str(input("Quel est votre pseudo ? : "))
+        mdp = getpass.getpass(f"Mot de passe pour {pseudo} ? : ")
         id_joueur = get_id_joueur(pseudo , mdp)
         
         if len(id_joueur) > 0 :
